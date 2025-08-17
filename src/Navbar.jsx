@@ -9,12 +9,12 @@ const Navbar = () => {
     <nav className="vit">
       <h2 className="logo">Fonte</h2>
 
-      {/* Burger tugma */}
+      
       <div className="burger" onClick={() => setIsOpen(!isOpen)}>
         ☰
       </div>
 
-      {/* Menyu */}
+
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
         <li>
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>

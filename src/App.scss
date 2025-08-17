@@ -130,17 +130,16 @@ body{
     }
   }
 
-  /* 📱 Responsive */
   @media (max-width: 768px) {
     .burger {
       display: block;
     }
 
     .nav-links {
-      position: absolute;
+      
       top: 60px;
       right: 0;
-      width: 200px;
+      width: 100px;
       background: #222;
       flex-direction: column;
       align-items: center;
@@ -411,17 +410,18 @@ width: 40%;
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 758px) {
   .contact {
+    display: flex;
     flex-direction: column;
 
     .contact-bg {
       display: none;
     }
+.row{
+  flex-direction: column;
+}
 
-    .contact-form {
-      max-width: 100%;
-    }
   }
 }
 
@@ -544,16 +544,16 @@ width: 40%;
   margin: 25px;
 }
 .lk-rs{
-  width: 350%;
+  width: 750%;
 }
 .lk-rs1{
-  width: 350%;
+  width: 750%;
 }
 .lk-rs2{
-  width: 350%;
+  width: 750%;
 }
 .lk-tx{
-  width: 500%;
+  width: 1500%;
 }
 .chiz22{
   width: 100%;
@@ -650,15 +650,18 @@ width: 40%;
 
   @media (max-width: 768px) {
     padding: 20px;
-
+  
     .title {
       font-size: 26px;
     }
 
     .card {
-      flex-direction: column;
-
+      display: flex;
+      justify-content: center;
+      
+      
       .text {
+        width: 150px;
         padding: 20px;
 
         h3 {
@@ -675,9 +678,7 @@ width: 40%;
         }
       }
 
-      .rasm1, .rasm2, .rasm3 {
-        height: 200px;
-      }
+
     }
   }
 }
