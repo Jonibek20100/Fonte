@@ -23,7 +23,7 @@ const Navbar = () => {
           <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
         </li>
         <li>
-          <Link to="/ptoject" onClick={() => setIsOpen(false)}>Regis</Link>
+          <Link to="/Return" onClick={() => setIsOpen(false)}>Regis</Link>
         </li>
       </ul>
     </nav>
