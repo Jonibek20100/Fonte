@@ -5,7 +5,6 @@ const Contact = () => {
   return (
   <>
     <div className="products">
-      <h2 className="title">Продукты</h2>
 
       <div className="card">
         <div className="text">
