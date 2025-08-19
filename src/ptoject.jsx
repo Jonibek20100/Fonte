@@ -10,8 +10,8 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_hjgswd1",   
-        "template_69evx9r", 
+        "service_o72xzzm",   
+        "template_pnpxchu", 
         form.current,
         "KOuurIT8S5oRMXtNm"    
       )
@@ -57,7 +57,7 @@ function Contact() {
         </form>
       </div>
 
-      {/* Pastdagi rasmlar */}
+  
       <div className="contacts-maps">
         <div className="contacts-map-item astana">
           <p>Астана</p>
