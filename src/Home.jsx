@@ -7,27 +7,42 @@ const Home = () => {
 
 <>
       <div className="katta">
-        <section className="hero">
-          <div className="overlay">
-            <div className="hero-inner">
 
-              <div className="hero-text">
-            <h1>Хедж-фонд</h1>
-            <p>
-              Классический выбор профессиональных инвесторов с заданными
-              умеренными параметрами риска. Основан на инвестировании в бумаги
-              индекса S&amp;P 500 с диверсификацией по 11 секторам экономики.
-            </p>
-            <button className="btn">Подробнее</button>
-          </div> 
-              <div className="hero-dots">
-                <span className="dot active"></span>
-                <span className="dot"></span>
-                <span className="dot"></span> 
-              </div>
+    <section className="hero">
+          <div className="overlay">
+      <div className="hero-slides">
+            <div className="hero-inner">
+                <div className="hero-text">
+              <h1>Хедж-фонд</h1>
+              <p>
+                Классический выбор профессиональных инвесторов с заданными
+                умеренными параметрами риска. Основан на инвестировании в бумаги
+                индекса S&amp;P 500 с диверсификацией по 11 секторам экономики.
+              </p>
+              <button className="btn">Подробнее</button>
+            </div> 
+
+
+
+        <input type="radio" name="slider" id="slide1" defaultChecked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+
+        <div className="slides">
+          <div className="slide slide-1"></div>
+          <div className="slide slide-2"></div>
+          <div className="slide slide-3"></div>
+        </div>
+
+        <div className="hero-dots">
+          <label htmlFor="slide1" className="dot"></label>
+          <label htmlFor="slide2" className="dot"></label>
+          <label htmlFor="slide3" className="dot"></label>
+        </div>
             </div>
+      </div>
           </div>
-        </section>
+    </section>
         <h2 className="h22 ">О нас</h2>
         <div className="div2">
           <div className="centr">
