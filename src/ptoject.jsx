@@ -49,12 +49,14 @@ function Contact() {
         </div>
 
    
-        <form ref={form} onSubmit={sendEmail} className="contacts-form">
-          <input type="text" name="from_name" placeholder="Арман Ар" required />
-          <input type="tel" name="phone" placeholder="Телефон" required />
-          <input type="email" name="email" placeholder="Email" required />
-          <button type="submit">Отправить</button>
-        </form>
+<form ref={form} onSubmit={sendEmail} className="contacts-form">
+  <input type="text" name="from_name" placeholder="Ваше имя" required />
+  <input type="tel" name="user_phone" placeholder="Телефон" required />
+  <input type="email" name="from_email" placeholder="Email" required />
+  <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+  <button type="submit">Отправить</button>
+</form>
+
       </div>
 
   
