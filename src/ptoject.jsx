@@ -11,7 +11,7 @@ function Contact() {
     emailjs
       .sendForm(
         "service_o72xzzm",   
-        "template_pnpxchu", 
+        "template_jwfti1t", 
         form.current,
         "KOuurIT8S5oRMXtNm"    
       )
