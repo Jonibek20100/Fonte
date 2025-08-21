@@ -34,11 +34,12 @@ const Home = () => {
           <div className="slide slide-3"></div>
         </div>
 
-        <div className="hero-dots">
-          <label htmlFor="slide1" className="dot"></label>
-          <label htmlFor="slide2" className="dot"></label>
-          <label htmlFor="slide3" className="dot"></label>
-        </div>
+
+<div className="hero-arrows">
+  <label htmlFor="slide3" className="arrow left">‹</label> 
+  <label htmlFor="slide2" className="arrow right">›</label> 
+</div>
+
             </div>
       </div>
           </div>

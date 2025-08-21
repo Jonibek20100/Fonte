@@ -8,9 +8,13 @@ const Navbar = () => {
   return (
     <nav className="vit">
       <h2 className="logo">Fonte</h2>
-<div className="burger" onClick={() => setIsOpen(!isOpen)}>
-  {!isOpen && "☰"}
-</div>
+
+      {/* Burger icon */}
+      <div className="burger" onClick={() => setIsOpen(!isOpen)}>
+        {isOpen ? "✖" : "☰"}
+      </div>
+
+      {/* Nav links */}
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
         <li>
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>

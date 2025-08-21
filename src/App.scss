@@ -89,6 +89,55 @@ body{
   }
 
 }
+.hero-arrows {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+
+  .arrow {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s;
+  }
+
+  .arrow:hover {
+    color: #f39c12;
+  }
+}
+
+.hero-arrows{
+  @media (max-width: 758px) {
+    .hero-arrows{
+      width: 100px;
+    }
+  }
+}
+#slide1:checked ~ .hero-arrows {
+  display: flex;
+}
+#slide1:checked ~ .hero-arrows .left {
+  pointer-events: auto;
+}
+#slide1:checked ~ .hero-arrows .left {
+  pointer-events: auto;
+  content: attr(data-slide3);
+}
+#slide1:checked ~ .hero-arrows .left {
+  pointer-events: auto;
+}
+
+
+#slide2:checked ~ .hero-arrows {
+  display: flex;
+}
+#slide2:checked ~ .hero-arrows .left {
+  pointer-events: auto;
+}
 
   
 .hero {
@@ -161,6 +210,7 @@ body{
 
   
   }
+  
 .vit {
   position: fixed;  
   top: 0;
