@@ -53,7 +53,7 @@ function Contact() {
   <input type="text" name="from_name" placeholder="Ваше имя" required />
   <input type="tel" name="user_phone" placeholder="Телефон" required />
   <input type="email" name="from_email" placeholder="Email" required />
-  <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+
   <button type="submit">Отправить</button>
 </form>
 
