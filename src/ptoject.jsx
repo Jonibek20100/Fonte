@@ -11,9 +11,9 @@ function Contact() {
     emailjs
       .sendForm(
         "service_o72xzzm",   
-        "template_jwfti1t", 
+        "template_9snliuu",  
         form.current,
-        "KOuurIT8S5oRMXtNm"    
+        "23wC2KfgEM2yAo9YN"  
       )
       .then(
         (result) => {
@@ -31,7 +31,6 @@ function Contact() {
   return (
     <div className="contacts-section">
       <div className="contacts-wrapper">
-
         <div className="contacts-details">
           <h2>Контакты</h2>
 
@@ -48,16 +47,34 @@ function Contact() {
           </p>
         </div>
 
-   
         <form ref={form} onSubmit={sendEmail} className="contacts-form">
-          <input type="text" name="from_name" placeholder="Арман Ар" required />
-          <input type="tel" name="phone" placeholder="Телефон" required />
-          <input type="email" name="email" placeholder="Email" required />
+          <input 
+            type="text" 
+            name="from_name" 
+            placeholder="Арман Ар" 
+            required 
+          />
+          <input 
+            type="tel" 
+            name="phone" 
+            placeholder="Телефон" 
+            required 
+          />
+          <input 
+            type="email" 
+            name="from_email" 
+            placeholder="Email" 
+            required 
+          />
+          <textarea 
+            name="message" 
+            placeholder="Ваше сообщение" 
+            required
+          ></textarea>
           <button type="submit">Отправить</button>
         </form>
       </div>
 
-  
       <div className="contacts-maps">
         <div className="contacts-map-item astana">
           <p>Астана</p>
