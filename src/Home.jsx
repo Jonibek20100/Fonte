@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./App.scss";
-import { FaChevronLeft } from "react-icons/fa";
+
 
 const Home = () => {
+  
+   const formRef = useRef(null);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    if (!formRef.current) return;
+
+    emailjs
+      .sendForm(
+        "service_o72xzzm",    
+        "template_9snliuu",   
+        formRef.current,
+        "23wC2KfgEM2yAo9YN"     
+      )
+      .then(() => alert("Xabar yuborildi ✅"))
+      .catch((err) => {
+        console.error(err);
+        alert("Xatolik ❌. Keyinroq urinib ko‘ring.");
+      });
+  };
   return (
 
 <>
@@ -178,18 +199,16 @@ exercitationem eos enim repellendus perferendis tempore ut reprehenderit magni d
             </div>
           </div>
         </div>
-
-
     <div className="contact">
-      <div className="contact-form">
-        <input type="text" placeholder="Арман Арманов" />
+      <form ref={formRef} onSubmit={sendEmail} className="contact-form">
+        <input type="text" name="from_name" placeholder="Арман Арманов" required />
         <div className="row">
-          <input type="email" placeholder="armanov@yahoo.com" />
-          <input type="text" placeholder="+7 777 81" />
+          <input type="email" name="from_email" placeholder="armanov@yahoo.com" required />
+          <input type="text" name="phone" placeholder="+7 777 81" />
         </div>
-        <textarea placeholder="Текст обращения"></textarea>
+        <textarea name="message" placeholder="Текст обращения" required></textarea>
         <button type="submit">Получить консультацию</button>
-      </div>
+      </form>
       <div className="contact-bg"></div>
     </div>
         <div className="vox11">
